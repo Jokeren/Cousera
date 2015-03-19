@@ -1,0 +1,10 @@
+g++ -g -O2    -c -o algorithm.o algorithm.cc
+algorithm.cc: 在成员函数‘void pagerank::Algorithm::read_input()’中:
+algorithm.cc:88:13: 错误：‘struct pagerank::vertex_t’没有名为‘clear’的成员
+      vertex.clear();
+             ^
+algorithm.cc:107:11: 错误：‘struct pagerank::vertex_t’没有名为‘push_back’的成员
+    vertex.push_back(edge);
+           ^
+<builtin>: recipe for target 'algorithm.o' failed
+make: *** [algorithm.o] Error 1
