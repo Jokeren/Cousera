@@ -108,6 +108,9 @@ namespace pagerank {
 			_m_matrix_m[_m_nodes_map[to]].push_back(_m_nodes_map[from]);
 			++prev_count;
 		}
+		
+		fclose(fp);
+
 		_m_degree[_m_nodes_map[prev_id]] = prev_count;
 		_m_nnodes = cnt - 1;
 
